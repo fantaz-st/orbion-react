@@ -4,7 +4,7 @@ import Plan from './Plan';
 import classes from './Pricing.module.css';
 
 const Pricing = () => {
-  const [activePlan, setActivePlan] = useState('2');
+  const [activePlan, setActivePlan] = useState(2);
   const [checked, setChecked] = useState(false);
 
   const handleChange = () => {
