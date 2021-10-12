@@ -1,0 +1,71 @@
+.testimonials {
+  background: url('../../assets/images/testimonial-bg.png') center no-repeat;
+  background-size: cover;
+  padding: 90px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-slider {
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+}
+
+.slide-left,
+.slide-right {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0;
+  padding: 0 5px;
+  padding-left: 5px;
+  width: 10%;
+  overflow: hidden;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+}
+
+.chevron {
+  display: inline-block;
+  width: 2vw;
+  height: 2vw;
+  position: relative;
+  box-sizing: border-box;
+  opacity: 0.65;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  transition: opacity 300ms ease;
+}
+
+.slide-left .chevron {
+  transform: rotate(45deg);
+}
+.slide-right .chevron {
+  transform: rotate(-135deg);
+}
+
+.slide-left {
+  left: 0;
+}
+.slide-right {
+  right: 0;
+}
+
+.slide-left:hover,
+.slide-right:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.slide-left:hover .chevron,
+.slide-right:hover .chevron {
+  opacity: 0.95;
+}

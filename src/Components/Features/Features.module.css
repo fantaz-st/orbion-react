@@ -1,0 +1,51 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  gap: 6rem;
+}
+
+.features-menu {
+  flex: 1;
+}
+
+.features-menu-button {
+  width: 275px;
+
+  display: block;
+  text-align: left;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 3px solid #e8eaef;
+  border-right-color: rgb(232, 234, 239);
+  font-size: 15px;
+  font-weight: 500;
+  color: #505056;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.features-menu-button i {
+  font-size: 18px;
+  background-color: #f1f2f7;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 0.5em;
+}
+.features-menu-button.active {
+  border-right: 3px solid var(--main-accent-color);
+}
+.features-menu-button.active i {
+  background-color: var(--main-accent-color);
+  color: #ffffff;
+}

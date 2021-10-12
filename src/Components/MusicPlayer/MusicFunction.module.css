@@ -1,0 +1,17 @@
+.music-single-function {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  max-width: 50%;
+  margin-bottom: 2em;
+}
+
+.music-single-function i {
+  height: 30px;
+  width: 45px;
+  line-height: 30px;
+  text-align: center;
+  background-color: red;
+  border-radius: 50%;
+  color: #ffffff;
+}

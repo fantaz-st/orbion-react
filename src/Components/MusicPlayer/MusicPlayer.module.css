@@ -1,0 +1,36 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  gap: 4rem;
+  flex: 1;
+}
+
+.music-text,
+.music-image {
+  max-width: 50%;
+}
+
+.music-image img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: visible;
+  max-width: 100%;
+}
+
+.music-image {
+  position: absolute;
+  left: 55%;
+  max-width: 100%;
+}
+
+.music-functions {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

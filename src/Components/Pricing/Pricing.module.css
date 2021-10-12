@@ -1,0 +1,91 @@
+.pricing {
+  background-color: #eef1f6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-plans-monthly {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 1em;
+}
+
+.pricing-plans-yearly {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+input[type='checkbox'] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 79px;
+  height: 37px;
+  background: grey;
+  display: block;
+  border-radius: 60px;
+  position: relative;
+  margin: 0 auto;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: var(--main-accent-color);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
+}
+
+.plan-toggler {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.plan-toggler p {
+  font-size: 14px;
+}
+.bold {
+  font-weight: 500;
+  color: #0e1133;
+}

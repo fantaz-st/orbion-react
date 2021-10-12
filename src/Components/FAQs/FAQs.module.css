@@ -1,0 +1,19 @@
+.FAQs {
+  background-color: #eef1f6;
+  background-image: url(../../assets/images/shapes/faq-shape.png);
+  background-position: 94% 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.FAQs-questions {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
